@@ -30,7 +30,7 @@
         welcomeSlider.owlCarousel({
             items: 1,
             loop: true,
-            autoplay: false,
+            autoplay: true,
             smartSpeed: 1000,
             autoplayTimeout: 10000,
             nav: true,
@@ -144,9 +144,9 @@
     // ***********************************
     // :: 6.0 Portfolio Button Active Code
     // ***********************************
-
-    $('.portfolio-menu button.btn').on('click', function () {
-        $('.portfolio-menu button.btn').removeClass('active');
+// changes made
+    $('.classynav > ul > li').on('click', function () {
+        $('.classynav > ul > li').removeClass('active');
         $(this).addClass('active');
     })
 
